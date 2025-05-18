@@ -1,0 +1,66 @@
+:root {
+    --button-horizontal-offset: 400px;
+    --button-vertical-offset: 270px;
+    --center-sigil-button-size: 190px;
+    --max-z-index: 9999;
+}
+
+#title {
+    display: block;
+    margin: 5vh auto 0;
+    position: relative;
+    z-index: var(--max-z-index);
+}
+
+#center-sigil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    position: relative;
+    margin-top: 10vh;
+}
+
+#center-sigil-image {
+    width: 400px;
+    user-select: none;
+}
+
+.center-sigil-button {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: var(--center-sigil-button-size);
+    height: var(--center-sigil-button-size);
+    position: absolute;
+}
+
+#center-sigil-button-TL {
+    left: calc(50% - var(--button-horizontal-offset));
+    top: calc(50% - var(--button-vertical-offset));
+}
+
+#center-sigil-button-TR {
+    right: calc(50% - var(--button-horizontal-offset));
+    top: calc(50% - var(--button-vertical-offset));
+}
+
+#center-sigil-button-BL {
+    left: calc(50% - var(--button-horizontal-offset));
+    bottom: calc(50% - var(--button-vertical-offset));
+}
+
+#center-sigil-button-BR {
+    right: calc(50% - var(--button-horizontal-offset));
+    bottom: calc(50% - var(--button-vertical-offset));
+}
+
+#center-sigil-button-BR-fix {
+    flex-direction: column;
+}
+
+.center-sigil-button-text {
+    width: 200px;
+}

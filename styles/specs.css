@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 7vh;
+}
+
+#title {
+    color: rgb(0, 225, 255);
+    
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+
+    text-align: center;
+}
+
+a {
+    font-size: 48px;
+    color: #296ef8;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px dotted #2050b3;
+    padding-bottom: 1px;
+
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+#cpu, #ram, #nvme {
+    display: flex;
+    align-items: center;
+    gap: 7vh;
+}
+
+#cpu-image {
+    width: 307px;
+    height: 470px;
+    object-fit: contain;
+}
+
+#ram-image, #nvme-image {
+    transform: rotate(90deg);
+    object-fit: contain;
+}
+
+a:hover {
+    color: #5b91ff;
+    border-bottom: 1px solid #3a7bff;
+}
+
+p {
+    color: snow;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+    color: snow;
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 12px 15px;
+}
+
+th {
+    background-color: #5f5f5f;
+}
+
+tr:nth-child(even) {
+    background-color: #333333;
+}
+
+tr:nth-child(odd) {
+    background-color: #272727;
+}
+
