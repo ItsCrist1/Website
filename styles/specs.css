@@ -15,6 +15,7 @@ body {
         1px 1px 0 #000;
 
     text-align: center;
+    font-size: 48px;
 }
 
 a {
@@ -32,7 +33,7 @@ a {
         1px 1px 0 #000;
 }
 
-#cpu, #ram, #nvme {
+#cpu, #ram, #nvme, #misc, #networkcard, #display {
     display: flex;
     align-items: center;
     gap: 7vh;
@@ -44,8 +45,33 @@ a {
     object-fit: contain;
 }
 
-#ram-image, #nvme-image {
+#ram-image {
     transform: rotate(90deg);
+    object-fit: contain;
+}
+
+#nvme-image {
+    transform: rotate(90deg);
+    width: 256px;
+    height: 328px;
+}
+
+#networkcard-image {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+#display-image {
+    width: 483px;
+    height: 354px;
+    object-fit: contain;
+}
+
+#misc-image {
+    /* half the size of the source image: 1500px by 1125px */
+    width: 588px;
+    height: 420px;
     object-fit: contain;
 }
 
@@ -83,4 +109,3 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: #272727;
 }
-
