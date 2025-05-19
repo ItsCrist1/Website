@@ -2,7 +2,6 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 7vh;
 }
 
 #title {
@@ -16,6 +15,11 @@ body {
 
     text-align: center;
     font-size: 48px;
+    margin-bottom: 10vh;
+}
+
+section {
+    margin-bottom: 7vh;
 }
 
 a {
@@ -37,6 +41,14 @@ a {
     display: flex;
     align-items: center;
     gap: 7vh;
+}
+
+#cpu {
+    margin-left: 13vh;
+}
+
+#nvme {
+    margin-left: 8vh;
 }
 
 #cpu-image {
@@ -80,15 +92,22 @@ a:hover {
     border-bottom: 1px solid #3a7bff;
 }
 
-p {
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+p, li {
     color: snow;
+    font-size: 18px;
 }
 
 table {
     border-collapse: collapse;
-    width: 80%;
-    margin: 20px 0;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15);
 }
 
 th, td {

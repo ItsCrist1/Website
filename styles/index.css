@@ -24,6 +24,7 @@
 #center-sigil-image {
     width: 400px;
     user-select: none;
+    filter: drop-shadow(0 0 15px rgba(123, 16, 194, .75));
 }
 
 .center-sigil-button {
@@ -63,4 +64,34 @@
 
 .center-sigil-button-text {
     width: 200px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    transform: translateX(-50%);
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    50% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+#footer {
+    font-size: 24px;
+    color: aliceblue;
+
+    /* Make clone for more frequent appearence */
+
+    &::after {
+        content: "Project Made By Adam Cristian";
+        padding-left: 100vw;
+    }
+
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+    display: inline-block;
 }

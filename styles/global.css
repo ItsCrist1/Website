@@ -1,5 +1,5 @@
 :root {
-    --grid-color: rgba(255, 255, 255, 0.05);
+    --grid-color: rgba(255, 255, 255, .05);
 
     --gradient-start: #0f2027;
     --gradient-middle: #095ba8;
@@ -10,6 +10,8 @@
     border-radius: 50%;
     background: #1d1d249a;
     cursor: pointer;
+
+    box-shadow: 0 0 15px 5px rgba(0, 123, 255, .3);
 
     transition: transform .4s cubic-bezier(.34, 1.56, .64, 1), 
                 background-color .3s ease;
