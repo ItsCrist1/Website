@@ -1,9 +1,79 @@
 :root {
     --grid-color: rgba(255, 255, 255, .05);
 
-    --gradient-start: #0f2027;
+    --gradient-start: #233f4b;
     --gradient-middle: #095ba8;
     --gradient-end: #5a29e0;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 180px;
+    height: 100vh;
+    background: rgba(29, 29, 36, 0.45);
+    backdrop-filter: blur(10px);
+    border-right: 2px solid rgba(41, 110, 248, 0.3);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    z-index: 1000;
+}
+
+nav h1 {
+    position: inherit;
+    top: 0;
+    align-self: center;
+    
+    color: rgb(77, 77, 77);
+
+    font-size: 48px;
+    user-select: none;
+}
+
+nav a {
+    color: #296ef8;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: none;
+    transition: background-color 0.3s ease;
+    font-size: 48px;
+    user-select: none;
+}
+
+nav a:hover {
+    background-color: rgba(41, 110, 248, 0.1);
+}
+
+#nav-move-button {
+    background: none;
+    border: none;
+
+    transition: none;
+}
+
+#nav-move-button.flipped {
+    transform: scaleX(-1);
+}
+
+#nav-move-button:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#nav-move-button.flipped:hover {
+    transform: scaleX(-1) scale(1.1);
+}
+
+#nav-move-button-img {
+    width: 100px;
+    height: 100px;
 }
 
 .round-button {
@@ -40,7 +110,7 @@ body {
         var(--gradient-middle) 75%, 
         var(--gradient-start) 100%);
 
-    animation: gradient-animation 15s ease infinite;
+    animation: gradient-animation 20s ease infinite;
 
     background-size: 350% 350%;
     background-attachment: fixed;

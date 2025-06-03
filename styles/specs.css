@@ -26,15 +26,9 @@ a {
     font-size: 48px;
     color: #296ef8;
     text-decoration: none;
-    font-weight: 500;
-    border-bottom: 1px dotted #2050b3;
     padding-bottom: 1px;
-
-    text-shadow: 
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+    background-color: rgba(0,0,0, .1);
+    border-radius: 10px;
 }
 
 #cpu, #ram, #nvme, #misc, #networkcard, #display {

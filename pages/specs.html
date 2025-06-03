@@ -1,16 +1,31 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="/styles/specs.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/specs.css">
 
     <title>Specifications</title>
 </head>
 
 <body>
     <header>
+        <nav id="nav">
+            <h1>Specs</h1>
+
+            <a href="index.html"><b>Home</b></a>
+            <a href="faq.html">FAQ</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="info.html">Info</a>
+
+            <button id="nav-move-button">
+                <img id="nav-move-button-img" src="../assets/nav/arrow.png" alt="Arrow Icon">
+            </button>
+        </nav>
+
         <h1 id="title">Dell Vostro 3520 Product Specifications</h1>
     </header>
 
@@ -28,11 +43,11 @@
                 <p>TDP: 15W | PL1: 15W | PL2: 55W | 100°C tJMax</p>
             </article>
 
-            <img id="cpu-image" src="/assets/specs/cpu-die.png" alt="Representation of the i5-1235U's Die">
+            <img id="cpu-image" src="../assets/specs/cpu-die.png" alt="Representation of the i5-1235U's Die">
         </section>
 
         <section id="ram">
-            <img id="ram-image" src="/assets/specs/ram.png" alt="Image of a SODIMM stick of RAM">
+            <img id="ram-image" src="../assets/specs/ram.png" alt="Image of a SODIMM stick of RAM">
 
             <article>
                 <a href="https://www.dell.com/en-us/shop/dell-laptops/vostro-3520-laptop/spd/vostro-15-3520-laptop">RAM: DDR4 RAM</a>
@@ -52,11 +67,11 @@
                 <p>The Laptop has one PCIe 3.0 x4 Slot for Storage and Another SATA 3 2.5inch SSD Slot</p>
             </article>
             
-            <img id="nvme-image" src="/assets/specs/nvme.png" alt="Image of an NVMe PCIe x4">
+            <img id="nvme-image" src="../assets/specs/nvme.png" alt="Image of an NVMe PCIe x4">
         </section>
 
         <section id="networkcard">
-            <img id="networkcard-image" src="/assets/specs/networkcard.png" alt="Image of a one lane PCIe Network Card">
+            <img id="networkcard-image" src="../assets/specs/networkcard.png" alt="Image of a one lane PCIe Network Card">
 
             <article>
                 <a href="https://www.dell.com/en-us/shop/dell-laptops/vostro-3520-laptop/spd/vostro-15-3520-laptop">Network Card: PCIe 3.0 x1</a>
@@ -71,7 +86,7 @@
         </section>
 
         <section id="display">
-            <img id="display-image" src="/assets/specs/display.png" alt="Image of the Dell Vostro 3520 from the side, display visible">
+            <img id="display-image" src="../assets/specs/display.png" alt="Image of the Dell Vostro 3520 from the side, display visible">
 
             <article>
                 <a href="https://www.dell.com/en-us/shop/dell-laptops/vostro-3520-laptop/spd/vostro-15-3520-laptop">15.6 Inch IPS Display</a>
@@ -82,7 +97,7 @@
         </section>
 
         <section id="misc">
-            <img id="misc-image" src="/assets/specs/misc.png" alt="Image of the Dell Vostro 3520 from the side, display not visible, semi-open around 70 degrees">
+            <img id="misc-image" src="../assets/specs/misc.png" alt="Image of the Dell Vostro 3520 from the side, display not visible, semi-open around 70 degrees">
 
             <article>
                 <a href="https://www.dell.com/en-us/shop/dell-laptops/vostro-3520-laptop/spd/vostro-15-3520-laptop">Miscellaneous</a>
@@ -145,6 +160,8 @@
             </tbody>
         </table>
     </main>
+
+    <script src="../scripts/global.js"></script>
 </body>
 
 </html>

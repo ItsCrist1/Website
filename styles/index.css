@@ -1,7 +1,7 @@
 :root {
-    --button-horizontal-offset: 400px;
-    --button-vertical-offset: 270px;
-    --center-sigil-button-size: 190px;
+    --button-horizontal-offset: 410px;
+    --button-vertical-offset: 280px;
+    --center-sigil-button-size: 210px;
     --max-z-index: 9999;
 }
 
@@ -25,6 +25,13 @@
     width: 400px;
     user-select: none;
     filter: drop-shadow(0 0 15px rgba(123, 16, 194, .75));
+
+    transition: transform .4s cubic-bezier(.34, 1.56, .64, 1), 
+                background-color .3s ease;
+}
+
+#center-sigil-image:hover {
+    transform: scale(1.1);
 }
 
 .center-sigil-button {
