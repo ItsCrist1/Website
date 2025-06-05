@@ -46,6 +46,7 @@ function toggleHide(defaultState = false) {
     });
 
     arrow.style.opacity = isHidden ? "0" : "100";
+    menu.style.backdropFilter = isHidden ? "blur(10px)" : "none";
 
     console.log(`${defaultState ? "Initial" : ""} Menu Visibility Change: ${isHidden ? "Hidden" : "Visible"}`);
 }
