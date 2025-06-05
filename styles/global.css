@@ -12,9 +12,6 @@ nav {
     top: 0;
     width: 180px;
     height: 100vh;
-    background: rgba(29, 29, 36, 0.45);
-    backdrop-filter: blur(10px);
-    border-right: 2px solid rgba(41, 110, 248, 0.3);
     
     display: flex;
     flex-direction: column;
@@ -51,7 +48,7 @@ nav a:hover {
     background-color: rgba(41, 110, 248, 0.1);
 }
 
-#nav-move-button {
+#nav-move-button, #nav-menu-button {
     background: none;
     border: none;
 
@@ -62,7 +59,7 @@ nav a:hover {
     transform: scaleX(-1);
 }
 
-#nav-move-button:hover {
+#nav-move-button:hover, #nav-menu-button:hover {
     transform: scale(1.1);
     background-color: rgba(0, 0, 0, 0);
 }
@@ -71,8 +68,7 @@ nav a:hover {
     transform: scaleX(-1) scale(1.1);
 }
 
-#nav-move-button-img {
-    width: 100px;
+#nav-move-button-img, #menu-button-img {
     height: 100px;
 }
 

@@ -4,16 +4,16 @@ body {
     flex-direction: column;
 }
 
-main {
-    margin-left: 210px;
-    margin-right: 210px;
-}
-
 .container {
     background-color: rgba(0,0,0, 0.2);
     border-radius: 20px;
     padding: 10px;
     margin: 20px;
+}
+
+h1 {
+    color: rgba(140, 142, 145);
+    font-size: 72px;
 }
 
 h2 {
@@ -24,4 +24,8 @@ h2 {
 p, li {
     color: rgb(215, 191, 221);
     font-size: 24px;
+}
+
+a {
+    color: rgba(140, 142, 145);
 }
