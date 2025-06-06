@@ -23,7 +23,7 @@ async function fetchExchangeRates(base_prices_ron) {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const base_prices_ron = [2981, 2399, 3299];
+    const base_prices_ron = [2981, 2399, 3299]; // hard coded, Order: Emag, Altex, Flanco
     
     await fetchExchangeRates(base_prices_ron);
     

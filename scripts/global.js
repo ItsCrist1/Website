@@ -10,7 +10,7 @@ const margin = "220px";
 let isFlipped = localStorage.getItem("nav-flipped") === "true";
 let isHidden = localStorage.getItem("is-hidden") === "true";
 
-function flip (defaultState = false) {
+function flip (defaultState = false, log = true) {
     if(!defaultState) isFlipped = !isFlipped;
     arrow.classList.toggle("flipped", isFlipped);
 
@@ -27,7 +27,7 @@ function flip (defaultState = false) {
 
     localStorage.setItem("nav-flipped", isFlipped);
     
-    console.log(`${defaultState ? "Initial" : ""} Menu Position Change: ${isFlipped ? "Right" : "Left"}`);
+    if(log) console.log(`${defaultState ? "Initial" : ""} Menu Position Change: ${isFlipped ? "Right" : "Left"}`);
 }
 
 function toggleHide(defaultState = false) {
@@ -35,7 +35,7 @@ function toggleHide(defaultState = false) {
     localStorage.setItem("is-hidden", isHidden);
 
     if(isHidden) main.style.marginLeft = main.style.marginRight = "0px";
-    else flip(true);
+    else flip(true, false); // calling this will automatically set the previous margins without logging
 
     nav.style.background = isHidden ? "none" : "rgba(29, 29, 36, 0.45)";
     nav.style.backdropFilter = isHidden ? "none" : "blur(10px)";
@@ -62,6 +62,11 @@ window.addEventListener("keydown", (event) => {
 
 menu.addEventListener("click", () => {
     toggleHide();
+});
+
+window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" || event.key === "b")
+        toggleHide();
 });
 
 flip(true); // initial flip to check in storage for the last state
